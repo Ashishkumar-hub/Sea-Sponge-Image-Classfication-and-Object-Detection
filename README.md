@@ -2,7 +2,7 @@
 
 #### Problem Statement:
     
-    WSponges may look like plant life, but they are actually animals. These sea-bottom dwellers are very simple multi-cellular creatures. 
+    Sponges may look like plant life, but they are actually animals. These sea-bottom dwellers are very simple multi-cellular creatures. 
     There are various types of sea sponges found on reefs and deep-sea bottoms. 
     Some are loners, while others grow in colonies. They have a very wide range of sizes, shapes and colors.
     
@@ -43,5 +43,20 @@
     This type of sponge has a leather look to it. It is bag-shaped and has a spotted exterior and is bright green inside. 
     You will sometimes see these growing on rocks in an aquarium.
     
-    
+#### Result
+![Screenshot (245)](https://user-images.githubusercontent.com/55132850/154292831-121f28b7-f004-4134-83e1-7cb2929b49a4.png)
+
+![Screenshot (239)](https://user-images.githubusercontent.com/55132850/154292845-147b186a-3097-4869-8cda-34a95bf0a205.png)
+
+![Screenshot (240)](https://user-images.githubusercontent.com/55132850/154292851-ffd697fc-8d39-4dda-b4e8-35e6b854bfa7.png)
+
+![Screenshot (241)](https://user-images.githubusercontent.com/55132850/154292863-c4fd422f-494b-4570-b6f4-8af2800d9827.png)
+
+![Screenshot (242)](https://user-images.githubusercontent.com/55132850/154292889-8cafc48b-6e88-4990-9813-6ea033459c1a.png)
+
+![Screenshot (243)](https://user-images.githubusercontent.com/55132850/154292896-555f4452-35f9-4658-8510-8c46a4530c42.png)
+
+![Screenshot (244)](https://user-images.githubusercontent.com/55132850/154292910-e3cd0a9e-665c-4641-ac5f-c6f89ed4b48f.png)
+
+
     

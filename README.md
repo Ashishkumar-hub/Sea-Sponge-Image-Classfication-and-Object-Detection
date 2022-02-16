@@ -47,8 +47,6 @@
 
 Web App Link: http://seasponge.azurewebsites.net/
 
-![Screenshot (245)](https://user-images.githubusercontent.com/55132850/154292831-121f28b7-f004-4134-83e1-7cb2929b49a4.png)
-
 ![Screenshot (239)](https://user-images.githubusercontent.com/55132850/154292845-147b186a-3097-4869-8cda-34a95bf0a205.png)
 
 ![Screenshot (240)](https://user-images.githubusercontent.com/55132850/154292851-ffd697fc-8d39-4dda-b4e8-35e6b854bfa7.png)

@@ -1,6 +1,12 @@
 # sea_sponge_transfer_learning
 
+Aim: This is my end to end project submisson for problem statement by DroneBase.
+
 #### Problem Statement:
+
+Build and train a system to perform object detection of Sea Sponges
+
+#### About Sea Sponge:
     
     Sponges may look like plant life, but they are actually animals. These sea-bottom dwellers are very simple multi-cellular creatures. 
     There are various types of sea sponges found on reefs and deep-sea bottoms. 
@@ -42,10 +48,59 @@
     It is usually found in deeper water and grows in large colonies. 
     This type of sponge has a leather look to it. It is bag-shaped and has a spotted exterior and is bright green inside. 
     You will sometimes see these growing on rocks in an aquarium.
-    
-#### Result
 
+#### Dataset Description 
+    
+    The dataset was collected from google images using Image Scrapper from my GitHub Repository for downloading 
+    the 6 different types of sea sponges.
+    
+    Drive link to data set: https://drive.google.com/drive/folders/1JfFf2CY7k3dbPjXxSHkP47U6afs-EcRm?usp=sharing
+    
+    I have used 60 Images for training the model and 58 images for testing it. All the images belong to 6 different 
+    classes of sea sponge as mentioned in description.
+    
+#### Model Training 
+    
+    The platfom I initially used for creating the model was Google Colab as it provides free GPU usage.
+    For training the model Resnet50 using imagenet weights was used.
+    
+    I have compared it with VGG19 the results of VGG19 were not satisftory so went ahead with saving the Resnet50 model.
+    
+#### For Running the Project:
+    
+    Below I have mentioned the Deployed link of the sample application that can be used for prediction purposes right away.
+    
+    Download the zip file extract it it already has a h5 file for Resnet50 trained model
+    
+    > Open the project in Pychram or VS code 
+    
+    > Create a new Conda environemnt 
+        - File > Settings > Python Interpretor > Add > Clreate new conda environment
+        
+    > Activate the enviironment in terminal conda activate "ENV_NAME" 
+    
+    > Run : pip install - requirements.txt
+    
+    > Run the project find it on http://127.0.0.1:5000/
+    
+    > Kindly use some of the images in uploads folder for testing it or you can see the SS below. 
+        
+#### Results
+   
+    With only 60 traning and 58 test images I got an accuracy of 80% with a validation accuracy of 45%. 
+    It can be improved just for submission purposes i have used the model that i have created initially.
+    
+    Reset50 is a powerful model we just need to increaase the number of traning and test images in the dataset 
+    to increse the model peformence.
+    
+    I made a sample application using flask for the client or the end users to make predictions easily with just one click
+    I was configuring the CI CD pipelines for the project using docker and circle CI and deploying it on Heroku 
+    but the space issue was there for submission purpose I have deployed the model on Azure Cloud without the CI CD configuration
+    Kindly find the other projects in my Github repo for seeinga demo of that.
+ 
 Web App Link: http://seasponge.azurewebsites.net/
+
+***Some SS for the Results***
 
 ![Screenshot (239)](https://user-images.githubusercontent.com/55132850/154292845-147b186a-3097-4869-8cda-34a95bf0a205.png)
 

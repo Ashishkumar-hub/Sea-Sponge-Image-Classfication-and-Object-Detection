@@ -153,6 +153,8 @@ Web App Link: http://seasponge.azurewebsites.net/
 
 The result for object detection wo't be much great because i ran it for 500 epochs only we need to make it atleast 10000-20000 epochs still with just 500 epochjs it was able to detec the sea spongs it is pretty amazing in case of Tensorflow Object Detection API it failed to do so.
 
+Check the readme.md in YOLOv5 folder for updates for moving further it was just a demo here how to proceed solving such problem statements.
+
 ![download](https://user-images.githubusercontent.com/55132850/154830997-dd853ab5-ed60-4245-9d04-856f583c3856.jpg)
 
 ![download (1)](https://user-images.githubusercontent.com/55132850/154830999-bb5469af-a660-4f63-811f-767f1693b843.jpg)

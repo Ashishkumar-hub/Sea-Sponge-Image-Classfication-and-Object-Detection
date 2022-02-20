@@ -61,12 +61,19 @@ Build and train a system to perform object detection of Sea Sponges
     
 #### Model Training 
     
+    For Image Classiification:
     The platfom I initially used for creating the model was Google Colab as it provides free GPU usage.
     For training the model Resnet50 using imagenet weights was used.
     
     I have compared it with VGG19 the results of VGG19 were not satisftory so went ahead with saving the Resnet50 model.
     
+    For Object Detection:
+    I have tried with Tensorflow Object Detection API and YoloV5 the results were much better in case of YOLOv5.
+    - the porcess for gatherig the dataset was same as for image classiification then labelling was done using labelimg tool later i exported the dataset to roboflow if you don't want to download the labelimg tool you can use roboflow for labelling the images and gerate the API key then use that in colab for mmodel training.
+    
 #### For Running the Project:
+    
+    For Image Classification: 
     
     Below I have mentioned the Deployed link of the sample application that can be used for prediction purposes right away.
     
@@ -83,10 +90,27 @@ Build and train a system to perform object detection of Sea Sponges
     
     > Run the project find it on http://127.0.0.1:5000/
     
-    > Kindly use some of the images in uploads folder for testing it or you can see the SS below. 
+    > Kindly use some of the images in uploads folder for testing it or you can see the SS below.
+    
+    For Object Detection:
+    
+    > Gather the dataset of images and label our dataset (Just like image classification use the image scrapper for it or you can use the images used for image classification task)
+    
+    > we will label the imgges for differen type of sea sponge using labelimg tool or you can use roboflow for that task it gives you free aceess if you keep the dataset public
+    
+    > Export our dataset to YOLOv5 (we will put our dataset in roboflow and generate the API key from there and use that for training the model)
+    
+    > Train YOLOv5 to recognize the objects in our dataset
+    
+    > Train the yolov5 model for our dataset we kept on roboflow
+    
+    > Evaluate our YOLOv5 model's performance
+    
+    > Run test inference to view our model at work
         
 #### Results
    
+    For Image Classification: 
     With only 60 traning and 58 test images I got an accuracy of 80% with a validation accuracy of 45%. 
     It can be improved just for submission purposes i have used the model that i have created initially.
     
@@ -97,10 +121,15 @@ Build and train a system to perform object detection of Sea Sponges
     I was configuring the CI CD pipelines for the project using docker and circle CI and deploying it on Heroku 
     but the space issue was there for submission purpose I have deployed the model on Azure Cloud without the CI CD configuration
     Kindly find the other projects in my Github repo for seeinga demo of that.
+    
+    For Object Detection:
+    I have ran yolov5 for 500 epochs this is for testing purpose only ideally it should be trained for 20000 for testing and aqround 100000 for production grade.
+    The results were atmost satisfactory seeing I ran it for 500 epochs only.
+    
  
 Web App Link: http://seasponge.azurewebsites.net/
 
-***Some SS for the Results***
+***Some Results SS for the IMAGE CLASSIFICATION ***
 
 ![Screenshot (239)](https://user-images.githubusercontent.com/55132850/154292845-147b186a-3097-4869-8cda-34a95bf0a205.png)
 
@@ -114,5 +143,16 @@ Web App Link: http://seasponge.azurewebsites.net/
 
 ![Screenshot (244)](https://user-images.githubusercontent.com/55132850/154292910-e3cd0a9e-665c-4641-ac5f-c6f89ed4b48f.png)
 
+***Some Results SS for the OBJECT DETECTION USING YOLOv5***
 
-    
+The result for object detection wo't be much great because i ran it for 500 epochs only we need to make it atleast 10000-20000 epochs still with just 500 epochjs it was able to detec the sea spongs it is pretty amazing in case of Tensorflow Object Detection API it failed to do so.
+
+![download](https://user-images.githubusercontent.com/55132850/154830997-dd853ab5-ed60-4245-9d04-856f583c3856.jpg)
+
+![download (1)](https://user-images.githubusercontent.com/55132850/154830999-bb5469af-a660-4f63-811f-767f1693b843.jpg)
+
+![download (2)](https://user-images.githubusercontent.com/55132850/154831000-ae0d083c-da99-4fdc-9554-c9a1ebf8d36e.jpg)
+
+![download (3)](https://user-images.githubusercontent.com/55132850/154831001-0d3a763b-0b43-46de-b127-dfab10f95b42.jpg)
+
+![download (4)](https://user-images.githubusercontent.com/55132850/154831002-74d89b16-0621-46c7-a114-85e62119d740.jpg)
